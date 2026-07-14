@@ -1,0 +1,24 @@
+.bloc-counter {
+  background-color: #8e44ad;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.incre {
+  font-size: 60px;
+  margin-top: 10px;
+}

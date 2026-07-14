@@ -1,0 +1,27 @@
+.drag-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 600px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px #254ffa;
+  background: white;
+}
+
+.fill {
+  background-image: url("/public/img/img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 145px;
+  width: 145px;
+  cursor: move;
+}
