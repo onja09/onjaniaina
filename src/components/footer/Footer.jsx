@@ -27,8 +27,14 @@ function Footer() {
               </h3>
               <ul className="w-full grid grid-cols-2 gap-3 text-base text-slate-800 font-semibold">
                 {allList.map((item) => (
-                  <NavLink key={item.id} to={item.route}>
-                    <li className="text-white">{item.title}</li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? "text-slate-500" : "text-white"
+                    }
+                    key={item.id}
+                    to={item.route}
+                  >
+                    <li>{item.title}</li>
                   </NavLink>
                 ))}
               </ul>

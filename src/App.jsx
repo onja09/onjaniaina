@@ -19,6 +19,7 @@ import HoverBoard from "./page/miniprojet/HoverBoard";
 import Incrementation from "./page/miniprojet/Incrementation";
 import FormWave from "./page/miniprojet/FormWave";
 import Message from "./page/Message";
+import ScrollToTop from "./components/scrollToTop";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
@@ -42,6 +43,7 @@ function App() {
   // }, []);
   return (
     <div ref={ref} className="bodyFont w-full text-[#111] max-w-full mx-auto">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout handleMode={handleMode} />}>
           <Route

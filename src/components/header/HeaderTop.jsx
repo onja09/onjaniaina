@@ -26,7 +26,7 @@ function HeaderTop({ handleMode }) {
           </div>
         </div>
       </NavLink>
-      <ul className="flex items-center gap-6 text-base text-slate-600 font-semibold overflow-hidden">
+      <ul className="flex items-center xs:gap-3 md:gap-6 text-base text-slate-600 font-semibold overflow-hidden">
         <li>
           <div className="text-base text-slate-800">
             <a
@@ -38,7 +38,7 @@ function HeaderTop({ handleMode }) {
                 <div className="p-[6px] rounded-full bg-slate-50 cursor-pointer envelop">
                   <FaPhone
                     href="tel:034 85 897 35"
-                    className="fa_envelop w-[13px] h-[13px] text-slate-800"
+                    className="fa_envelop xs:w-[11px] xs:h-[11px] md:w-[13px] md:h-[13px] text-slate-800"
                   />{" "}
                 </div>
                 <span className="italic text-sm xs:hidden smlx:block">
@@ -59,7 +59,7 @@ function HeaderTop({ handleMode }) {
                 <div className="p-[6px] rounded-full bg-slate-50 cursor-pointer envelop">
                   <FaEnvelope
                     href="mailto:onjalahe@gmail.com"
-                    className="fa_envelop w-[13px] h-[13px] text-slate-800"
+                    className="fa_envelop xs:w-[11px] xs:h-[11px] md:w-[13px] md:h-[13px] text-slate-800"
                   />{" "}
                 </div>
                 <span className="italic text-sm xs:hidden smlx:block">

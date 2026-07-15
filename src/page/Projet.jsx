@@ -15,7 +15,7 @@ function Projet() {
       <div className="xs:w-full lg:max-w-[1200px] mx-auto px-6 xs:py-14 md:py-24">
         <div className="w-full flex flex-col justify-center gap-5">
           <h2 className="text-3xl text-slate-700 font-semibold mb-4 pb-4 border-b border-b-slate-200 relative after:absolute after:-bottom-[2px] after:left-0 after:w-20 after:h-1 after:bg-blue-500">
-            Pojets su github
+            Pojets sur github
           </h2>
           <p className="max-w-5xl flex justify-start">
             Voici quelques parmi les projets que j’ai réalisés pendant tous mes
@@ -26,11 +26,11 @@ function Projet() {
             {projets.map((item) => (
               <div
                 key={item._id}
-                className="xs:w-full xs:h-56 sml:w-60 sml:h-56 rounded-md relative overflow-hidden bg-blue-500 group"
+                className="xs:w-80 sml:w-60 sml:h-56 rounded-md relative overflow-hidden bg-blue-500 group"
               >
-                <div className="w-full h-full scale-75 -translate-y-3  group-hover:scale-100 duration-700">
+                <div className="w-full h-full scale-75 xs:translate-y-0 sml:-translate-y-3  group-hover:scale-100 duration-700">
                   <img
-                    className="w-60 h-64 mx-auto object-cover object-center opacity-100 group-hover:opacity-50 group-hover:object-cover duration-700"
+                    className="w-80 h-64 mx-auto object-cover object-center opacity-100 group-hover:opacity-50 group-hover:object-cover duration-700"
                     src={item.img}
                     alt="image"
                   />

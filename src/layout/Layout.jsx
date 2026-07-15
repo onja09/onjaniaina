@@ -8,7 +8,6 @@ import HeaderBottom from "../components/header/HeaderBottom";
 function Layout({ handleMode }) {
   const [nav, setNav] = useState(false);
   const scro = useRef(null);
-
   useEffect(() => {
     const handleScroll = () => {
       const el = scro.current;

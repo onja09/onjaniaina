@@ -3,8 +3,7 @@ import { FaAngleDoubleUp, FaList, FaPhone, FaTimes } from "react-icons/fa";
 import { allList } from "../../constant";
 import { NavLink } from "react-router-dom";
 
-function HeaderBottom({ nav, setNav }) {
-  const [barsco, setBarsco] = useState("#");
+function HeaderBottom({ nav, setNav, barsco, setBarsco }) {
   const refbar = useRef();
   const scrotop = useRef();
   const showNav = () => {
@@ -17,7 +16,6 @@ function HeaderBottom({ nav, setNav }) {
 
   const handleListe = (e) => {
     setNav(false);
-    setBarsco("#" + e.target.parentElement.hash.slice(2, 30));
   };
 
   useEffect(() => {
@@ -34,7 +32,6 @@ function HeaderBottom({ nav, setNav }) {
       if (el) {
         if (window.scrollY > 650) {
           el.classList.add("scroTop");
-          console.log("ok");
         } else {
           el.classList.remove("scroTop");
         }
@@ -47,8 +44,15 @@ function HeaderBottom({ nav, setNav }) {
     };
   }, []);
 
+  const handleToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <div className="blocHeaderBottom relative w-full h-16 py-1 mx-auto flex items-center md:justify-center xs:justify-end xs:px-6">
+    <div className="blocHeaderBottom relative w-full h-16 py-1 mx-auto flex items-center md:justify-center xs:justify-end xs:px-3">
       <div className="flex items-center gap-3">
         {nav ? (
           <div
@@ -86,8 +90,8 @@ function HeaderBottom({ nav, setNav }) {
         </ul>
       </div>
       <a
+        onClick={handleToTop}
         ref={scrotop}
-        href={barsco}
         className="fixed bg-blue-500 p-2 top-[60vh] -right-10 duration-500 shadow-md shadow-[rgba(0,0,0,0.5)] rounded-md"
       >
         <div className="bloc-font">
