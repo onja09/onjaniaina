@@ -23,7 +23,7 @@ function Message() {
     }
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-    setErrors({ ...errors, [name]: "" }); // Reset individual field error
+    setErrors({ ...errors, [name]: "" });
   };
 
   const validateForm = () => {
@@ -36,7 +36,7 @@ function Message() {
       newErrors.reply_to = "! Entrer un email valide";
     }
 
-    if (!form.message) newErrors.message = "! Enter votre message";
+    if (!form.message) newErrors.message = "! Entrer votre message";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -70,7 +70,7 @@ function Message() {
         setTimeout(() => {
           setMessage("");
         }, 5000);
-        console.error(err);
+        // console.error(err);
       })
       .finally(() => setLoading(false));
   };

@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { FaAngleDoubleUp, FaList, FaPhone, FaTimes } from "react-icons/fa";
+import React, { useEffect, useRef } from "react";
+import { FaAngleDoubleUp, FaList, FaTimes } from "react-icons/fa";
 import { allList } from "../../constant";
 import { NavLink } from "react-router-dom";
 
@@ -89,15 +89,15 @@ function HeaderBottom({ nav, setNav, barsco, setBarsco }) {
           ))}
         </ul>
       </div>
-      <a
+      <div
         onClick={handleToTop}
         ref={scrotop}
-        className="fixed bg-blue-500 p-2 top-[60vh] -right-10 duration-500 shadow-md shadow-[rgba(0,0,0,0.5)] rounded-md"
+        className="fixed cursor-pointer bg-blue-500 p-2 top-[60vh] -right-10 duration-500 shadow-md shadow-[rgba(0,0,0,0.5)] rounded-md"
       >
         <div className="bloc-font">
           <FaAngleDoubleUp className="text-white" />
         </div>
-      </a>
+      </div>
     </div>
   );
 }

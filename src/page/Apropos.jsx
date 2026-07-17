@@ -5,16 +5,24 @@ import { apropos } from "../constant";
 function Apropos({ handlePop, imaPop, handleClose }) {
   return (
     <div id="apropos" className="blocApropos w-full">
-      {imaPop && (
-        <div
-          onClick={handleClose}
-          className="bloc-pop cursor-pointer fixed z-50 top-0 left-0 w-full h-full flex items-center justify-center"
-        >
-          <div className="bloc-imapop">
-            <img className="max-w-[500px]" src={imaPop} alt="" srcset="" />
-          </div>
+      <div
+        onClick={handleClose}
+        className={
+          imaPop
+            ? "bloc-pop cursor-pointer fixed z-50 top-0 left-0 opacity-100 w-full h-full flex items-center justify-center duration-300"
+            : "bloc-pop cursor-pointer fixed z-50 -top-full left-0 opacity-0 w-full h-full flex items-center justify-center duration-300"
+        }
+      >
+        <div className="max-w-[1200px] mx-auto bloc-imapop">
+          <img
+            className="object-contain h-[500px]"
+            src={imaPop}
+            alt=""
+            srcset=""
+          />
         </div>
-      )}
+      </div>
+
       <div className="Hero h-[80vh] w-full flex items-center justify-center">
         <div className="max-w-[300px]">
           <h1 className="text-4xl text-white font-bold">Apropos de moi</h1>
@@ -23,7 +31,7 @@ function Apropos({ handlePop, imaPop, handleClose }) {
       <div className="w-full xs:py-14 md:py-24 px-6">
         <div className="w-full mx-auto max-w-[1200px] h-full">
           <h2 className="text-3xl text-slate-700 font-semibold mb-10 pb-4 border-b border-b-slate-200 relative after:absolute after:-bottom-[2px] after:left-0 after:w-20 after:h-1 after:bg-blue-500">
-            Apropos de moi
+            Qui suis-je ?
           </h2>
           <div className="w-full xs:justify-start mdl:justify-between xs:items-start lg:items-center flex xs:flex-col-reverse lg:flex-row gap-10">
             <div className="relative xs:w-full md:w-auto">
@@ -38,7 +46,7 @@ function Apropos({ handlePop, imaPop, handleClose }) {
               <div className="ima-box absolute xs:-right-5 md:-right-10 xs:-bottom-5 md:-bottom-10">
                 <div className="box-ima h-[160px] w-[150px] border-8 border-white overflow-hidden">
                   <img
-                    src="./img/img3.jpg"
+                    src="./img/img7.jpg"
                     alt="image"
                     className="ima object-cover w-full h-full"
                     onClick={(e) => handlePop(e)}

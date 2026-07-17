@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { bannerItem } from "../../constant";
 import Slider from "react-slick";
 import ButtonTelechargement from "../action/ButtonTelechargement";
@@ -55,11 +55,11 @@ function Container({ handleClose, handlePop, imaPop }) {
       </div>
     ),
     customPaging: (i) => (
-      <div className={i == dotActive ? "is-dot" : "not-dot"}>{}</div>
+      <div className={i === dotActive ? "is-dot" : "not-dot"}>{}</div>
     ),
   };
   return (
-    <div id="#" className="page-container">
+    <div className="page-container">
       <div className="bloc-container w-full h-full">
         <div className="w-full h-full">
           <Slider {...Settings}>

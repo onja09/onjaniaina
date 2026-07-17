@@ -4,16 +4,24 @@ import { motion } from "framer-motion";
 function Apropos({ imaPop, handlePop, handleClose }) {
   return (
     <div className="aproHome w-full">
-      {imaPop && (
-        <div
-          onClick={handleClose}
-          className="bloc-pop fixed cursor-pointer z-50 top-0 left-0 w-full h-full flex items-center justify-center"
-        >
-          <div className="bloc-imapop">
-            <img className="max-w-[500px]" src={imaPop} alt="" srcset="" />
-          </div>
+      <div
+        onClick={handleClose}
+        className={
+          imaPop
+            ? "bloc-pop cursor-pointer fixed z-50 top-0 left-0 opacity-100 w-full h-full flex items-center justify-center duration-300"
+            : "bloc-pop cursor-pointer fixed z-50 -top-full left-0 opacity-0 w-full h-full flex items-center justify-center duration-300"
+        }
+      >
+        <div className="bloc-imapop">
+          <img
+            className="object-contain h-[600px]"
+            src={imaPop}
+            alt=""
+            srcset=""
+          />
         </div>
-      )}
+      </div>
+
       <div className="sect-apro xs:py-14 md:py-24 px-6 bg-blue-500 flex justify-center items-center">
         <div className="bloc-line flex justify-between items-center lg:flex-row xs:flex-col xs:gap-8 w-[1200px] max-w-full gap-8">
           <div className="col1 xs:max-w-full lg:max-w-lg">

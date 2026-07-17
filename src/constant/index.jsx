@@ -54,7 +54,7 @@ export const allList = [
     {
       id: 1,
       param:
-        "Je m’appelle RAFETISON Onjaniaina Herilala, 32 ans, basé à Antananarivo, Madagascar. Diplômé en informatique et passionné par le numérique, je conçois des solutions web adaptées aux besoins réels des utilisateurs.",
+        "Je m'appelle RAFETISON Onjaniaina Herilala, 34 ans, basé à Antananarivo, Madagascar. Diplômé en informatique et fort d'un stage de 6 mois chez Netykom, je suis développeur web passionné par la création de sites et d'applications modernes, performants et adaptés aux besoins des utilisateurs",
     },
     {
       id: 2,
@@ -272,7 +272,7 @@ export const allList = [
   image = [
     {
       _id: 1,
-      img: "./img/img3.jpg",
+      img: "./img/img1.jpg",
     },
     {
       _id: 2,
@@ -284,7 +284,7 @@ export const allList = [
     },
     {
       _id: 4,
-      img: "./img/img1.jpg",
+      img: "./img/img8.jpg",
     },
     {
       _id: 5,
@@ -296,7 +296,7 @@ export const allList = [
     },
     {
       _id: 7,
-      img: "./img/img1.jpg",
+      img: "./img/img3.jpg",
     },
   ],
   blogItem = [

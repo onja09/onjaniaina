@@ -91,7 +91,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full h-14 bg-slate-900 border-t-2 border-white p-2 flex items-center justify-center gap-3">
+      <div className="w-full h-14 bg-slate-900 border-t-[1px] border-white p-2 flex items-center justify-center gap-3">
         <div className="w-20 h-full">
           <img className="w-full h-full" src="./img/mada.png" alt="" />
         </div>
