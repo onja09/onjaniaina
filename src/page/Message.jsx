@@ -6,9 +6,8 @@ function Message() {
   // validation
   const initial = {
     name: "",
-    email: "",
-    password: "",
-    cpassword: "",
+    reply_to: "",
+    message: "",
     list_error: [],
   };
 
@@ -64,6 +63,7 @@ function Message() {
           setMessage("");
         }, 5000);
         e.target.reset();
+        setForm(initial);
       })
       .catch((err) => {
         setMessage({ type: "error", text: "Erreur lors de l'envoi." });
@@ -134,11 +134,7 @@ function Message() {
                 <span>Votre message</span>
               </div>
               {loading && <div className="loader"></div>}
-              <button
-                type="submit"
-                disabled={loading && "disabled"}
-                id="submit-btn"
-              >
+              <button type="submit" disabled={loading} id="submit-btn">
                 Envoyer
               </button>
             </form>
@@ -148,7 +144,7 @@ function Message() {
               <div className="text-base text-slate-800">
                 <a
                   href="tel:034 85 897 35"
-                  target="__blank"
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <div className="flex items-center gap-3 border-r-2 border-r-slate-900 pr-6">
@@ -166,7 +162,7 @@ function Message() {
               <div className="text-base text-slate-800">
                 <a
                   href="mailto:onjalahe@gmail.com"
-                  target="__blank"
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <div className="flex items-center gap-3 border-l-2 border-l-slate-900 pl-6">

@@ -96,7 +96,7 @@ function Blog() {
         ></div>
         <div className="w-full h-full">
           <h2 className="text-3xl text-slate-700 mb-11 font-semibold pb-4 border-b border-b-slate-200 relative after:absolute after:-bottom-[2px] after:left-0 after:w-10 after:h-1 after:bg-blue-500">
-            Mon Blog
+            Un parcours construit par la persévérance
           </h2>
           <div className="w-full h-full flex lg:items-center xs:justify-center lg:justify-between gap-3 flex-wrap">
             <div className="lglx:max-w-[500px] xs:max-w-full xs:flex xs:flex-col-reverse lglx:block">
@@ -114,11 +114,11 @@ function Blog() {
               </div>
               <div className="w-full">
                 <p className="font-normal indent-6 text-justify">
-                  Au cours de mon parcours, j’ai appris que pour devenir
-                  développeur, c’est apprendre en continu, un processus sans fin
-                  en raison des nouvelles versions et des innovations
-                  technologiques. En effet, la science évolue de manière
-                  exponentielle, presque à l’infini.
+                  Au cours de mon parcours, j’ai compris que devenir
+                  développeur, c’est apprendre en permanence. Les technologies
+                  évoluent constamment avec les nouvelles versions et les
+                  innovations, ce qui nous pousse à nous former et à progresser
+                  tout au long de notre carrière.
                 </p>
               </div>
             </div>

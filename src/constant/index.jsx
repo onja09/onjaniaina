@@ -302,14 +302,14 @@ export const allList = [
   blogItem = [
     {
       id: 1,
-      desc: "La route n’a pas toujours été facile. Durant les trois premiers mois de mon apprentissage, j’ai rencontré beaucoup de difficultés à comprendre la liaison entre les codes. Mais en me basant sur la logique et les algorithmes, j’ai commencé à réussir dans la création d’applications et de sites web.",
+      desc: "Ma famille représente également l’une de mes plus grandes sources de motivation. Son soutien et sa confiance me donnent la force de persévérer, de continuer à apprendre et de toujours chercher à me dépasser, même face aux difficultés.",
     },
     {
       id: 2,
-      desc: "Chaque projet est une nouvelle occasion d’explorer, de créer et de résoudre des défis techniques. Les premières difficultés m’ont appris la rigueur, la logique et la patience, des qualités essentielles pour avancer dans ce métier.",
+      desc: "Chaque projet est une nouvelle occasion d’explorer, de créer et de relever des défis techniques. Les premières difficultés m’ont appris la rigueur, la logique et la patience, des qualités essentielles pour évoluer dans ce métier.",
     },
     {
       id: 3,
-      desc: "Pour moi, le développement est un art de progression : il allie curiosité, recherche et passion pour offrir des solutions efficaces et satisfaire pleinement les besoins des clients.",
+      desc: "Pour moi, le développement est un véritable art de progression : il allie curiosité, apprentissage continu et passion afin de concevoir des solutions efficaces et de répondre pleinement aux besoins des clients.",
     },
   ];

@@ -859,3 +859,12 @@ button:disabled {
 .logo-foot {
   clip-path: polygon(100% 46%, -200% -369%, 120% 300%);
 }
+
+/* 404 */
+
+.bloc-404 {
+  background: url("/public/img/img6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

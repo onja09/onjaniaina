@@ -20,6 +20,7 @@ import Incrementation from "./page/miniprojet/Incrementation";
 import FormWave from "./page/miniprojet/FormWave";
 import Message from "./page/Message";
 import ScrollToTop from "./components/scrollToTop";
+import NotPage from "./page/NotPage";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
@@ -82,6 +83,7 @@ function App() {
             <Route path="/form-input-wave" element={<FormWave />} />
           </Route>
         </Route>
+        <Route path="*" element={<NotPage />} />
       </Routes>
     </div>
   );
