@@ -52,19 +52,19 @@ function HeaderBottom({ nav, setNav, barsco, setBarsco }) {
   };
 
   return (
-    <div className="blocHeaderBottom relative w-full h-16 py-1 mx-auto flex items-center md:justify-center xs:justify-end xs:px-3">
+    <div className="blocHeaderBottom relative w-full h-16 py-1 mx-auto flex items-center lgl:justify-center xs:justify-end xs:px-3">
       <div className="flex items-center gap-3">
         {nav ? (
           <div
             onClick={closeNav}
-            className="p-2 text-base rounded-full cursor-pointer xs:flex md:hidden"
+            className="p-2 text-base rounded-full cursor-pointer xs:flex lgl:hidden"
           >
             <FaTimes className="list-ico" />
           </div>
         ) : (
           <div
             onClick={showNav}
-            className="p-2 text-base rounded-full cursor-pointer xs:flex md:hidden"
+            className="p-2 text-base rounded-full cursor-pointer xs:flex lgl:hidden"
           >
             <FaList className="list-ico" />
           </div>
@@ -73,8 +73,8 @@ function HeaderBottom({ nav, setNav, barsco, setBarsco }) {
           ref={refbar}
           className={
             nav
-              ? "afterListe xs:absolute xs:top-[100%] xs:cursor-pointer md:cursor-auto xs:bg-blue-500 md:bg-transparent z-40 xs:left-0 md:relative md:top-0 md:left-0 duration-500 flex xs:flex-col md:flex-row w-full items-center justify-center gap-6 text-base text-slate-800 font-semibold xs:p-16"
-              : "xs:absolute xs:top-[100%] xs:cursor-pointer md:cursor-auto xs:bg-blue-500 md:bg-transparent z-40 xs:left-[100%] md:relative md:top-0 md:left-0 duration-500 flex xs:flex-col md:flex-row w-full items-center justify-center gap-6 text-base text-slate-800 font-semibold xs:p-16"
+              ? "afterListe xs:absolute xs:top-[100%] xs:cursor-pointer lgl:cursor-auto xs:bg-blue-500 lgl:bg-transparent z-40 xs:left-0 lgl:relative lgl:top-0 lgl:left-0 duration-500 flex xs:flex-col lgl:flex-row w-full items-center justify-center gap-6 text-base text-slate-800 font-semibold xs:p-16"
+              : "xs:absolute xs:top-[100%] xs:cursor-pointer lgl:cursor-auto xs:bg-blue-500 lgl:bg-transparent z-40 xs:left-[100%] lgl:relative lgl:top-0 lgl:left-0 duration-500 flex xs:flex-col lgl:flex-row w-full items-center justify-center gap-6 text-base text-slate-800 font-semibold xs:p-16"
           }
         >
           {allList.map((item) => (

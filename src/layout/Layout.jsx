@@ -5,7 +5,7 @@ import HeaderTop from "../components/header/HeaderTop";
 import Footer from "../components/footer/Footer";
 import HeaderBottom from "../components/header/HeaderBottom";
 
-function Layout({ handleMode }) {
+function Layout() {
   const [nav, setNav] = useState(false);
   const scro = useRef(null);
   useEffect(() => {
@@ -31,7 +31,7 @@ function Layout({ handleMode }) {
         ref={scro}
         className="bloc-header fixed top-40px  left-0 z-[100] w-full duration-150"
       >
-        <HeaderTop handleMode={handleMode} />
+        <HeaderTop />
         {/* <HeaderLeft nav={nav} setNav={setNav} /> */}
         <HeaderBottom nav={nav} setNav={setNav} />
       </div>

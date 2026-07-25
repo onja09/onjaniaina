@@ -75,7 +75,7 @@ function Container({ handleClose, handlePop, imaPop }) {
                     alt=""
                   />
                 </div>
-                <div className="bloc-desc md:max-w-[1200px] w-full z-50 h-full absolute top-0 left-[50%] xs:px-5 px-0 translate-x-[-50%] flex items-center justify-center text-slate-900">
+                <div className="bloc-desc w-full z-50 h-full absolute top-0 left-[50%] xs:px-5 px-0 translate-x-[-50%] flex items-center justify-center text-slate-900">
                   <div className="p-6 relative flex flex-col gap-3 rounded-sm">
                     <motion.h1
                       initial={{ opacity: 0, y: -30 }}

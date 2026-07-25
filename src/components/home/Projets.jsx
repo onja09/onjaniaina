@@ -35,8 +35,8 @@ function Projets() {
 
   return (
     <div className="w-full xs:py-14 md:py-24 bg-blue-500">
-      <div>
-        <h2 className="afterTitle1 text-4xl text-center text-slate-50">
+      <div className="flex gap-4 flex-col items-start">
+        <h2 className="afterTitle1 text-4xl text-center text-slate-50 mx-auto">
           Projets <span className="text-slate-900">en ligne</span>
         </h2>
         <p className="max-w-[550px] text-center text-white mx-auto mb-16">

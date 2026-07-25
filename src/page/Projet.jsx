@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Projet() {
   return (
-    <div id="projets" className="w-full">
+    <div id="projets" className="w-full bg-white">
       <div className="Hero2 h-[80vh] w-full flex items-center justify-center">
         <div className="max-w-[300px]">
           <h1 className="text-4xl text-white font-bold">Projets</h1>
@@ -14,7 +14,7 @@ function Projet() {
       </div>
       <div className="xs:w-full lg:max-w-[1200px] mx-auto px-6 xs:py-14 md:py-24">
         <div className="w-full flex flex-col justify-center gap-5">
-          <h2 className="text-3xl text-slate-700 font-semibold mb-4 pb-4 border-b border-b-slate-200 relative after:absolute after:-bottom-[2px] after:left-0 after:w-20 after:h-1 after:bg-blue-500">
+          <h2 className="text-3xl text-slate-800 font-semibold mb-4 pb-4 border-b border-b-slate-200 relative after:absolute after:-bottom-[2px] after:left-0 after:w-20 after:h-1 after:bg-blue-500">
             Pojets sur github
           </h2>
           <p className="max-w-5xl flex justify-start">

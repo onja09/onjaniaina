@@ -8,11 +8,11 @@ import { NavLink } from "react-router-dom";
 function Etudes() {
   return (
     <div className="bg-[#f7f7f7] w-full xs:py-14 md:py-24 px-6">
-      <div className="line-et max-w-[1200px] mx-auto">
+      <div className="line-et max-w-[1200px] mx-auto flex flex-col items-center gap-5">
         <h2 className="afterTitle1 text-4xl text-center text-blue-400">
-          Experiences et etudes
+          Expériences et études
         </h2>
-        <p className="max-w-[550px] text-center mx-auto mb-16">
+        <p className="max-w-[550px] text-center mx-auto xs:mb-9 md:mb-12">
           Développeur web formé en informatique, avec une expérience pratique
           acquise lors d'un stage et de plusieurs formations professionnelles.
         </p>

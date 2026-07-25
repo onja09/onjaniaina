@@ -7,18 +7,18 @@ function Apropos({ imaPop, handlePop, handleClose }) {
       <div
         onClick={handleClose}
         className={
-          imaPop
+          imaPop.img
             ? "bloc-pop cursor-pointer fixed z-50 top-0 left-0 opacity-100 w-full h-full flex items-center justify-center duration-300"
             : "bloc-pop cursor-pointer fixed z-50 -top-full left-0 opacity-0 w-full h-full flex items-center justify-center duration-300"
         }
       >
         <div className="bloc-imapop">
           <img
-            className="object-contain h-[600px]"
-            src={imaPop}
-            alt=""
-            srcset=""
+            className="object-contain xs:h-auto md:h-[450px] lglx:h-[600px] w-full"
+            src={imaPop.img}
+            alt="image"
           />
+          <span className="text-white font-extrabold italic">{imaPop.alt}</span>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ function Apropos({ imaPop, handlePop, handleClose }) {
               transition={{ duration: 2, bounce: 0.4 }}
               className="infos"
             >
-              <h2 className="afterTitle text-4xl text-slate-50">
+              <h2 className="afterTitle text-4xl text-slate-50 mb-10">
                 Apropos <span className="text-slate-900">de moi</span>
               </h2>
               <p className="text-white">
@@ -65,7 +65,7 @@ function Apropos({ imaPop, handlePop, handleClose }) {
             <div className="box-ima h-[460px] xs:max-w-full xs:w-full md:w-[520px] md:max-w-full">
               <img
                 src="./img/img1.jpg"
-                alt="image"
+                alt="Onjaniaina"
                 className="ima w-full h-full object-cover"
                 onClick={(e) => handlePop(e)}
               />
@@ -74,7 +74,7 @@ function Apropos({ imaPop, handlePop, handleClose }) {
               <div className="box-ima h-[160px] w-[150px] border-8 border-blue-500 overflow-hidden">
                 <img
                   src="./img/img3.jpg"
-                  alt="image"
+                  alt="Onjaniaina"
                   className="ima object-cover w-full h-full"
                   onClick={(e) => handlePop(e)}
                 />

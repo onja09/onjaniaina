@@ -21,32 +21,34 @@ import FormWave from "./page/miniprojet/FormWave";
 import Message from "./page/Message";
 import ScrollToTop from "./components/scrollToTop";
 import NotPage from "./page/NotPage";
+import Cursor from "./components/home/Cursor";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
 
 function App() {
-  const ref = useRef();
-  const handleMode = () => {
-    ref.current.classList.toggle("change");
+  const infosIma = {
+    img: "",
+    alt: "",
   };
-  const [imaPop, setimaPop] = useState("");
+  const [imaPop, setimaPop] = useState(infosIma);
   const handlePop = (e) => {
-    setimaPop(e.target.src);
+    setimaPop({ ...imaPop, img: e.target.src, alt: e.target.alt });
     document.body.classList.add("is-imapop");
   };
 
   const handleClose = () => {
-    setimaPop("");
+    setimaPop(infosIma);
     document.body.classList.remove("is-imapop");
   };
   // useEffect(() => {
   //   AOS.init();
   // }, []);
   return (
-    <div ref={ref} className="bodyFont w-full text-[#111] max-w-full mx-auto">
+    <div className="bodyFont w-full text-[#111] max-w-full mx-auto">
+      <Cursor />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Layout handleMode={handleMode} />}>
+        <Route path="/" element={<Layout />}>
           <Route
             index
             element={

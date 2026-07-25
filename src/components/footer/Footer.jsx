@@ -39,7 +39,7 @@ function Footer() {
                 ))}
               </ul>
             </div>
-            <div className="">
+            <div>
               <h3 className="text-white font-bold mb-5 underline underline-offset-2">
                 Coordonnées
               </h3>
@@ -47,19 +47,19 @@ function Footer() {
                 <li>
                   <div className="text-base text-slate-800">
                     <a
-                      href="tel:034 85 897 35"
+                      href="tel:+26134 85 897 35"
                       target="__blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex items-center gap-3">
+                      <div id="cont" className="flex items-center gap-3">
                         <div className="p-[6px] rounded-full bg-slate-50 cursor-pointer envelop">
                           <FaPhone
-                            href="tel:034 85 897 35"
+                            href="tel:+26134 85 897 35"
                             className="fa_envelop w-[13px] h-[13px] text-slate-800"
                           />{" "}
                         </div>
                         <span className="italic text-white text-sm">
-                          034 85 897 35
+                          +26134 85 897 35
                         </span>
                       </div>
                     </a>
@@ -72,7 +72,7 @@ function Footer() {
                       target="__blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex items-center gap-3">
+                      <div id="cont" className="flex items-center gap-3">
                         <div className="p-[6px] rounded-full bg-slate-50 cursor-pointer envelop">
                           <FaEnvelope
                             href="mailto:onjalahe@gmail.com"
@@ -91,7 +91,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full h-14 bg-slate-900 border-t-[1px] border-white p-2 flex items-center justify-center gap-3">
+      <div className="w-full h-14 bg-slate-900 border-t-[1px] border-slate-500 p-2 flex items-center justify-center gap-3">
         <div className="w-20 h-full">
           <img className="w-full h-full" src="./img/mada.png" alt="" />
         </div>

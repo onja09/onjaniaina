@@ -5,7 +5,7 @@ import { experienceItems } from "../constant";
 
 function Experiences() {
   return (
-    <div id="experiences-etudes" className="w-full">
+    <div id="experiences-etudes" className="w-full bg-white">
       <div className="Hero1 h-[80vh] w-full flex items-center justify-center">
         <div className="max-w-[400px]">
           <h1 className="text-4xl text-white font-bold text-center">
@@ -14,8 +14,8 @@ function Experiences() {
         </div>
       </div>
       <div className="blocExperience xs:w-full h-full lg:max-w-[1200px] mx-auto px-6 xs:py-14 md:py-24">
-        <div className="w-full h-full flex flex-col gap-8">
-          <h2 className="text-3xl text-slate-700 font-semibold pb-4 border-b border-b-slate-200 relative after:absolute after:-bottom-[2px] after:left-0 after:w-20 after:h-1 after:bg-blue-500">
+        <div className="w-full h-full flex flex-col gap-10">
+          <h2 className="text-3xl text-slate-800 font-semibold pb-4 border-b border-b-slate-200 relative after:absolute after:-bottom-[2px] after:left-0 after:w-20 after:h-1 after:bg-blue-500">
             Mes expériences
           </h2>
           <div className="w-full flex xs:justify-center mdlx:justify-between flex-wrap gap-4">

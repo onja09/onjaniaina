@@ -22,7 +22,7 @@
   }
 
   .afterPara {
-    @apply relative after:absolute hover:pr-6 after:w-1 hover:after:w-full after:duration-500 after:-z-10 hover:text-white after:h-full after:top-0 after:-left-2 after:bg-blue-500;
+    @apply relative after:absolute after:w-1 hover:after:w-full after:duration-500 after:-z-10 z-10 hover:text-white after:h-full after:top-0 after:left-0 after:bg-blue-500;
   }
 
   .afterTitle {
@@ -46,7 +46,7 @@
   }
 
   .list-exp {
-    @apply xs:w-full flex flex-col gap-2 mdl:w-96 lgl:w-[250px] p-3 border border-blue-500 rounded-sm relative overflow-hidden after:absolute after:-bottom-5 hover:after:bottom-0  after:-right-5 hover:after:right-0 after:w-10 hover:after:w-full after:h-10 hover:after:h-full after:rotate-45 hover:after:rotate-0 after:duration-500 after:-z-10 hover:text-white after:bg-blue-500 hover:shadow-xl duration-300;
+    @apply xs:w-full flex flex-col gap-2 mdl:w-96 lgl:w-[250px] p-3 border border-blue-500 rounded-sm relative overflow-hidden z-10 after:absolute after:-bottom-5 hover:after:bottom-0  after:-right-5 hover:after:right-0 after:w-10 hover:after:w-full after:h-10 hover:after:h-full after:rotate-45 hover:after:rotate-0 after:duration-500 after:-z-10 hover:text-white after:bg-blue-500 hover:shadow-xl duration-300;
   }
 
   .afterListe {

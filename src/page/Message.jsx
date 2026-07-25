@@ -76,13 +76,13 @@ function Message() {
   };
 
   return (
-    <div id="contact" className="w-full">
+    <div id="contact" className="w-full bg-white">
       <div className="Hero1 h-[80vh] w-full flex items-center justify-center">
         <div className="max-w-[300px]">
           <h1 className="text-4xl text-white font-bold">Contactez-moi</h1>
         </div>
       </div>
-      <div className="blocsend xs:py-14 md:py-24 px-6">
+      <div className="blocsend xs:py-14 md:py-24 px-6 flex flex-col items-center">
         <h2 className="afterTitle1 text-4xl text-center text-blue-400">
           Formulaire de <span className="text-slate-800">contact</span>
         </h2>
@@ -143,14 +143,14 @@ function Message() {
             <li>
               <div className="text-base text-slate-800">
                 <a
-                  href="tel:034 85 897 35"
+                  href="tel:+26134 85 897 35"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <div className="flex items-center gap-3 border-r-2 border-r-slate-900 pr-6">
                     <div className="p-[10px] border-4 border-blue-500 rounded-full bg-blue-500 cursor-pointer envelop">
                       <FaPhone
-                        href="tel:034 85 897 35"
+                        href="tel:+26134 85 897 35"
                         className="fa_envelop w-[20px] h-[20px] text-white"
                       />{" "}
                     </div>

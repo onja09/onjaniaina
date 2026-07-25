@@ -13,7 +13,7 @@ export const allList = [
     },
     {
       id: 3,
-      title: "Experiences & Etudes",
+      title: "Expériences & études",
       route: "/experiences-etudes",
     },
     {
@@ -35,7 +35,7 @@ export const allList = [
   bannerItem = [
     {
       _id: 1,
-      img: "./img/img5.jpg",
+      img: "./img/img3.jpg",
     },
     {
       _id: 2,
@@ -43,7 +43,7 @@ export const allList = [
     },
     {
       _id: 3,
-      img: "./img/img3.jpg",
+      img: "./img/img5.jpg",
     },
     {
       _id: 4,
@@ -302,7 +302,7 @@ export const allList = [
   blogItem = [
     {
       id: 1,
-      desc: "Ma famille représente également l’une de mes plus grandes sources de motivation. Son soutien et sa confiance me donnent la force de persévérer, de continuer à apprendre et de toujours chercher à me dépasser, même face aux difficultés.",
+      desc: " Au cours de mon parcours, j’ai compris que devenir développeur, c’est apprendre en permanence. Les technologies évoluent constamment avec les nouvelles versions et les innovations, ce qui nous pousse à nous former et à progresser tout au long de notre carrière.",
     },
     {
       id: 2,

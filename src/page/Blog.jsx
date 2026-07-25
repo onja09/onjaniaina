@@ -76,7 +76,7 @@ function Blog() {
   }, [image]);
 
   return (
-    <div id="blog" className="w-full">
+    <div id="blog" className="w-full bg-white">
       <div className="Hero h-[80vh] w-full flex items-center justify-center">
         <div className="max-w-[300px]">
           <h1 className="text-4xl text-white font-bold">Blog</h1>
@@ -95,7 +95,7 @@ function Blog() {
           ref={img}
         ></div>
         <div className="w-full h-full">
-          <h2 className="text-3xl text-slate-700 mb-11 font-semibold pb-4 border-b border-b-slate-200 relative after:absolute after:-bottom-[2px] after:left-0 after:w-10 after:h-1 after:bg-blue-500">
+          <h2 className="text-3xl text-slate-800 mb-11 font-semibold pb-4 border-b border-b-slate-200 relative after:absolute after:-bottom-[2px] after:left-0 after:w-10 after:h-1 after:bg-blue-500">
             Un parcours construit par la persévérance
           </h2>
           <div className="w-full h-full flex lg:items-center xs:justify-center lg:justify-between gap-3 flex-wrap">
@@ -114,11 +114,10 @@ function Blog() {
               </div>
               <div className="w-full">
                 <p className="font-normal indent-6 text-justify">
-                  Au cours de mon parcours, j’ai compris que devenir
-                  développeur, c’est apprendre en permanence. Les technologies
-                  évoluent constamment avec les nouvelles versions et les
-                  innovations, ce qui nous pousse à nous former et à progresser
-                  tout au long de notre carrière.
+                  Ma famille représente l’une de mes plus grandes sources de
+                  motivation. Son soutien et sa confiance me donnent la force de
+                  persévérer, de continuer à apprendre et de toujours chercher à
+                  me dépasser, même face aux difficultés.
                 </p>
               </div>
             </div>
